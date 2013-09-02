@@ -1,0 +1,20 @@
+<%= form_tag do %>
+	<div>
+		<%= label_tag :name, 'Nombre' %>
+		<%= text_field_tag :name, params[:name], :placeholder => "¿Quién sos?" %>
+	</div>
+	<div>
+		<%= label_tag :email, 'E-mail' %>
+		<%= text_field_tag :email, params[:email], :placeholder => "¡Importantísimo! Revisá tu inbox y confirmá tu cuenta." %>
+	</div>
+	<div>
+		<%= label_tag :activity, 'Universidad/Profesión' %>
+		<%= text_field_tag :activity, params[:activity], :placeholder => "¿Trabajás o estudiás, o querés alguna de ambas?" %>
+	</div>
+	<div>
+		<%= label_tag :bio, 'Bio' %>
+		<%= text_field_tag :bio, params[:bio], :placeholder => "¡Contanos brevemente sobre vos!" %>
+		<!-- This should be a textarea with a placeholder. -->
+	</div>
+	<%= submit_tag "¡Vamos!"%>
+<% end %>
